@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <DefaultName>MyPlugin.cs</DefaultName>
+    <Name>CRM Plugin</Name>
+    <Description>Template for creating a Delegate Plugin for CRM.</Description>
+    <Icon>CrmPlugin.ico</Icon>
+    <TemplateID>13a8fff1-70e3-481f-addd-3d5179fb8fd6</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <RequiredFrameworkVersion>3.5</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">CrmPlugin.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
