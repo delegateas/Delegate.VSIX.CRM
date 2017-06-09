@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="Delegate.VSIX.CRM" Version="0.0.1" Language="en-US" Publisher="Delegate A/S, Martin Tange" />
+    <Identity Id="Delegate.VSIX.CRM" Version="0.0.2" Language="en-US" Publisher="Delegate A/S, Martin Tange" />
     <DisplayName>Delegate CRM</DisplayName>
     <Description xml:space="preserve">Delegate CRM extension that helps developing Dynamics 365/CRM solutions in Visual Studio.</Description>
     <Icon>icon128.png</Icon>
@@ -9,7 +9,7 @@
     <Tags>delegate dg dynamics crm xrm 365 plugin workflow codeactivity</Tags>
   </Metadata>
   <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+    <InstallationTarget Version="[14.0,16.0)" Id="Microsoft.VisualStudio.Community" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
@@ -18,4 +18,7 @@
     <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="CrmPlugin" d:TargetPath="|CrmPlugin;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
     <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="CrmWorkflowCodeActivity" d:TargetPath="|CrmWorkflowCodeActivity;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
   </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.Net.ComponentGroup.TargetingPacks.Common" Version="[15.0.26208.0,16.0)" DisplayName=".NET Framework 4 – 4.6 development tools" />
+  </Prerequisites>
 </PackageManifest>
